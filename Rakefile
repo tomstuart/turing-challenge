@@ -13,6 +13,6 @@ task default: :example
 
 # Add your own rake task here. e.g.
 #
-# task :chris do
-#   Harness.run(TuzzsAttempt.new)
-# end
+task :jcoglan do
+  Harness.run(JcoglansAttempt.new)
+end
