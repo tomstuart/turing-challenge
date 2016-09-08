@@ -82,12 +82,10 @@ class JcoglansAttempt < SomeonesAttempt
     _ = :-
 
     [
-      [ 1, 0, 0, :L, 1 ],
       [ 1, 1, 1, :L, 1 ],
       [ 1, B, 0, :R, 2 ],
 
       [ 2, _, _, :R, 2 ],
-      [ 2, 0, _, :L, 3 ],
       [ 2, 1, _, :L, 3 ],
       [ 2, B, B, :L, 5 ],
 
@@ -100,6 +98,8 @@ class JcoglansAttempt < SomeonesAttempt
       [ 4, 1, 1, :R, 4 ],
       [ 4, _, _, :R, 2 ],
 
+      [ 5, 0, 1, :L, 5 ],
+      [ 5, 1, 1, :L, 5 ],
       [ 5, _, B, :L, 5 ]
     ]
   end
