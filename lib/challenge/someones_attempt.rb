@@ -18,12 +18,8 @@ class SomeonesAttempt
   # README. You'll have to figure that yourself!
   def turing_machine_description
     [
-      [1, 0, 1, :R, 2],
-      [1, 1, 0, :L, 1],
+      [1, 1, 1, :L, 1],
       [1, B, 1, :R, 2],
-      [2, 0, 0, :R, 2],
-      [2, 1, 1, :R, 2],
-      [2, B, B, :L, 3],
     ]
   end
 
@@ -34,8 +30,8 @@ class SomeonesAttempt
   #
   # It is up to you how you represent numbers.
   def encode(input)
-    binary_string = input.to_s(2)
-    characters = binary_string.chars
+    unary_string = '1' * input
+    characters = unary_string.chars
     characters.map(&:to_i)
   end
 
@@ -46,7 +42,7 @@ class SomeonesAttempt
   #
   # It is up to you how you represent numbers.
   def decode(final_tape)
-    binary_string = final_tape.join
-    binary_string.to_i(2)
+    unary_string = final_tape.join
+    unary_string.chars.count('1')
   end
 end
